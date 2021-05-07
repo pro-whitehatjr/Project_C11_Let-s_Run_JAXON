@@ -4,7 +4,7 @@ var i;
 
 function preload(){
   pathImg = loadImage("path.png");
-  boyImg = loadAnimation("Jake1.png","Jake2.png","jake3.png","jake4.PNG","jake5.png");
+  boyImg = loadAnimation("Runner-1.png","Runner-2.png");
 }
 
 function setup(){
@@ -19,6 +19,7 @@ path.scale=1.2;
 
 //creating boy running
 boy = createSprite(180,340,30,30);
+boy.scale=0.08;
 boy.addAnimation("JakeRunning",boyImg);
   
 // create left Boundary
